@@ -1,0 +1,103 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #d0d2dd;
+}
+
+#calculator {
+  width: 303px;
+  height: 411px;
+  border: 2px solid #5e5a78;
+  background-color: rgba(86, 105, 139, 0.947);
+  -webkit-box-shadow: 1px 1px 10px #5e5a78;
+          box-shadow: 1px 1px 10px #5e5a78;
+  border-radius: 15px;
+  color: aliceblue;
+  overflow: hidden;
+  /**
+  * !Chrome, Safari, Edge, Opera 
+  **/
+  /**
+  * !Firefox
+  **/
+}
+#calculator #res2 {
+  direction: rtl;
+  height: 55px;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: rgba(86, 105, 139, 0.947);
+  color: aliceblue;
+  font-size: 25px;
+}
+#calculator #res {
+  direction: rtl;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: rgba(86, 105, 139, 0.947);
+  color: aliceblue;
+  font-size: 25px;
+}
+#calculator #res:focus {
+  outline: none;
+}
+#calculator input::-webkit-outer-spin-button,
+#calculator input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#calculator input[type=number] {
+  -moz-appearance: textfield;
+}
+#calculator #buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#calculator #buttons button {
+  width: 74px;
+  height: 75px;
+}
+#calculator #buttons #numbers {
+  width: 225px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#calculator #buttons #numbers button {
+  background-color: rgb(147, 150, 164);
+  color: aliceblue;
+}
+#calculator #buttons #numbers #next-number {
+  background-color: #24a92d;
+}
+#calculator #buttons #numbers #delete {
+  background-color: #e13d4a;
+}
+#calculator #buttons #operation button {
+  color: aliceblue;
+  background-color: #528de7;
+}
